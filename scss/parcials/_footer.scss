@@ -1,0 +1,43 @@
+//styles footer
+
+.footer{
+    .h3{
+        font-size: 200%;
+        text-align: center;
+        text-shadow: 3px 3px 3px;
+    }
+    .redes{
+        margin-bottom: 20px;
+    }
+    .icon{
+        width: 7%;
+    }
+    .foot2 :hover{
+        color: $secondary-color;
+    }
+    .foot1{
+        font-size: $titles;
+        text-shadow: 3px 3px 3px;
+        padding: 70px;
+    }
+    .foot3{
+        @include flex-column-center;
+        font-family: $font-paragraph;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        font-size: 150% ;
+        position: relative;
+        z-index: 100;
+        & :hover {
+            color: $secondary-color;
+        }
+        .flecha{
+            width: 3%;
+        }
+        .animate__bounce{
+            animation-name: bounce;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
